@@ -2,6 +2,7 @@ import Icones from '../Icones'
 import Logo from '../Logo'
 import Opcoes from '../Opcoes'
 import styled from 'styled-components'
+import PrimarySearchAppBar, { ResponsiveAppBar } from '../NavBar'
 
 const HeaderContainer = styled.header`
   background-color: #ffffff;
@@ -11,11 +12,11 @@ const HeaderContainer = styled.header`
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <ResponsiveAppBar>
       <Logo/>
-      <Opcoes/>
+      <isMenuOpen/>
       <Icones/>
-    </HeaderContainer>
+    </ResponsiveAppBar>
   )
 }
 

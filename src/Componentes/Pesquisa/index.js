@@ -5,12 +5,12 @@ import { useState } from "react"
 import { livros } from "./dadosPesquisa"
 
 const PesquisaContainer = styled.section`
-background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
-color: #FFF;
-text-align: center;
-padding: 85px 0;
-height: 270px;
-width: 100%;
+      background-image: linear-gradient(90deg,#03090e 35%,#485b68 165%);
+      color: #FFF;
+      text-align: center;
+      padding: 85px 0;
+      height: 270px;
+      width: 100%;
 `
 
 const Titulo = styled.h2`
@@ -56,12 +56,7 @@ const Pesquisa = () => {
                               setLivrosPesquisados(resultadoPesquisa)
                         }}
                   />
-                  {livrosPesquisados.map(livro => (
-                        <Resultado>
-                              <p>{livro.nome}</p>
-                              <img src={livro.src} />
-                        </Resultado>
-                  ))}
+
             </PesquisaContainer>
       )
 }
